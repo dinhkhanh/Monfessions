@@ -1,0 +1,396 @@
+/*
+	MOC Confessions
+	Version: 1.0
+	Author: Tran Dinh Khanh, MOC;
+	Website: www.facemoc.com;
+	License: GPL;
+*/
+body {
+	font-family: 'Open Sans';
+  	font-style: normal;
+  	font-weight: 400;
+  	font-size: 14px;
+  	background: #f9f9f9 url(../img/retina_wood.png) top left repeat fixed;
+}
+
+input, button, select, textarea {
+	font-family: 'Open Sans'
+}
+textarea {
+	width: 80%;
+	resize: vertical;
+}
+#mainWrapper {
+	width: 95%;
+	max-width: 980px;
+	margin: auto;
+}
+#mainContainer {
+	margin: 10px;
+}
+
+#overlayGhost {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0,0,0,.9);
+}
+#ghostImg {
+	width: 900px;
+	margin: auto;
+	margin-top: 20px;
+}
+#header {
+
+}
+#header #logo, #dk_social_links #avatarS {
+	float: left;
+	padding: 5px;
+	background: #fff;
+	z-index: 2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.15);
+	-ms-box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.15);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+#header #logo #logoImage {
+	max-width: 96px;
+}
+#header #logo a {
+	display: block;
+}
+#header #siteTitle {
+	margin-top: 23px;
+}
+#header #siteTitle h2 {
+	display:block;
+	font-size: 50px;
+	font-weight: 400;
+}
+.boxes {
+	position:relative;
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 3px rgba(100,100,100,.2);
+	-webkit-box-shadow: 0 1px 3px rgba(100,100,100,.2);
+	box-shadow: 0 1px 3px rgba(100,100,100,.2);
+}
+.boxes input[type="text"] {
+	width: 80%;
+	height: 32px;
+}
+.steps {
+	display: none;
+}
+.steps h2.question {
+	font-weight: 900;
+	font-size: 120%;
+}
+.steps .description {
+	display: block;
+}
+#knowme {
+	margin-left: -163px;
+	left: 50%;
+}
+#noScript {
+	display: block;
+}
+.trollfaces {
+	position: absolute;
+	right: 0;
+	display: none;
+	bottom: 0;
+}
+.trollfaces img{
+}
+#footer {
+	position: absolute;
+	bottom:5px;
+	right: 5px;
+}
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+#footer a:hover {
+	border-bottom: 1px dashed #fff;
+}
+#screamPlayer {
+	visibility: hidden;
+}
+#dk_social_links #avatarS {
+	margin-right: 20px;
+}
+ul li {
+	list-style: none;
+}
+ul.social_links li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 2px;
+	background-image: url(../img/iconsprite2.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-transition: .15s background-position ease;
+	-moz-transition: .15s background-position ease;
+	-o-transition: .15s background-position ease;
+	-ms-transition: .15s background-position ease;
+	transition: .15s background-position ease
+}
+ul.social_links li a {
+	display: block
+}
+ul.social_links li a span {
+	width: 32px;
+	height: 32px;
+	display: block
+}
+ul.social_links li.facebook {
+	background-position: -160px 0
+}
+ul.social_links li.facebook:hover {
+	background-position: -160px -32px
+}
+ul.social_links li.twitter {
+	background-position: -704px 0
+}
+ul.social_links li.twitter:hover {
+	background-position: -704px -32px
+}
+ul.social_links li.zingme {
+	background-position: -832px 0
+}
+ul.social_links li.zingme:hover {
+	background-position: -832px -32px
+}
+ul.social_links li.linkedin {
+	background-position: -288px 0
+}
+ul.social_links li.linkedin:hover {
+	background-position: -288px -32px
+}
+ul.social_links li.tumblr {
+	background-position: -672px 0
+}
+ul.social_links li.tumblr:hover {
+	background-position: -672px -32px
+}
+ul.social_links li.flickr {
+	background-position: -112px 0
+}
+ul.social_links li.flickr:hover {
+	background-position: -112px -32px
+}
+ul.social_links li.gplus {
+	background-position: -224px 0
+}
+ul.social_links li.gplus:hover {
+	background-position: -224px -32px
+}
+ul.social_links li.youtube {
+	background-position: -800px 0
+}
+ul.social_links li.youtube:hover {
+	background-position: -800px -32px
+}
+ul.social_links li.rss {
+	background-position: -512px 0
+}
+ul.social_links li.rss:hover {
+	background-position: -512px -32px
+}
+ul.social_links li.skype {
+	background-position: -576px 0
+}
+ul.social_links li.skype:hover {
+	background-position: -576px -32px
+}
+ul.social_links li.pinterest {
+	background-position: -864px 0
+}
+ul.social_links li.pinterest:hover {
+	background-position: -864px -32px
+}
+
+.jp-audio-container {
+	width: 60%;
+	padding-top: 10px;
+	margin: auto;
+}
+.jp-audio {
+	margin: auto;
+}
+div.jp-audio {
+	font-size: 1em;
+	font-family: Verdana, Arial, sans-serif;
+	color: #fff;
+	line-height: 1.6;
+}
+div.jp-audio {
+	width: 360px;
+}
+div.jp-interface {
+	position: relative;
+	width: 100%;
+}
+div.jp-audio div.jp-type-single div.jp-interface {
+	height: 30px;
+}
+div.jp-interface ul.jp-controls {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+div.jp-interface ul.jp-controls li {
+	display: inline;
+}
+div.jp-interface ul.jp-controls a {
+	position: absolute;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+a.jp-play, a.jp-pause {
+	width: 33px;
+	height: 30px;
+	z-index: 1;
+	outline: none;
+}
+div.jp-audio div.jp-type-single a.jp-play, div.jp-audio div.jp-type-single a.jp-pause {
+	top: 0;
+	left: 0;
+}
+a.jp-play {
+	background: url("../img/jplayer-black-and-yellow.png") 0 0 no-repeat;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+a.jp-play:hover {
+	background: url("../img/jplayer-black-and-yellow.png") -33px 0 no-repeat;
+}
+a.jp-pause {
+	background: url("../img/jplayer-black-and-yellow.png") 0 -30px no-repeat;
+	display: none;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+a.jp-pause:hover {
+	background: url("../img/jplayer-black-and-yellow.png") -33px -30px no-repeat;
+}
+div.jp-progress-container {
+	position: absolute;
+	top: 0;
+	left: 34px;
+	width: 225px;
+	height: 6px;
+	padding: 12px 10px;
+}
+div.jp-progress {
+	position: absolute;
+	overflow: hidden;
+}
+div.jp-audio div.jp-type-single div.jp-progress {
+	width: 223px;
+	height: 7px;
+	padding: 1px;
+	background: url("../img/jplayer-black-and-yellow.png") 0 -192px repeat-x;
+}
+div.jp-seek-bar {
+	width: 0px;
+	height: 5px;
+	cursor: pointer;
+}
+div.jp-play-bar {
+	width: 0px;
+	height: 5px;
+	background: url("../img/jplayer-black-and-yellow.png") 0 -133px repeat-x;
+}
+div.jp-volume-bar-container {
+	position: absolute;
+	top: 0;
+	left: 281px;
+	width: 40px;
+	height: 6px;
+	padding: 12px 10px;
+}
+div.jp-volume-bar {
+	position: relative;
+	overflow: hidden;
+	background: url("../img/jplayer-black-and-yellow.png") 0 -192px repeat-x;
+	width: 40px;
+	height: 9px;
+	cursor: pointer;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+div.jp-audio div.jp-type-single div.jp-volume-bar {
+	top: 0;
+	left: 20px;
+}
+div.jp-volume-bar-value {
+	width: 0px;
+	height: 5px;
+	margin: 1px;
+	background: url("../img/jplayer-black-and-yellow.png") 0 -133px repeat-x;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+a.jp-mute, a.jp-unmute {
+	width: 17px;
+	height: 13px;
+	z-index: 1;
+	outline: none;
+}
+div.jp-audio div.jp-type-single a.jp-mute, div.jp-audio div.jp-type-single a.jp-unmute {
+	top: 9px;
+	left: 290px;
+}
+a.jp-mute {
+	background: url("../img/jplayer-black-and-yellow.png") -10px -68px no-repeat;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+a.jp-mute:hover {
+	background: url("../img/jplayer-black-and-yellow.png") -43px -68px no-repeat;
+}
+a.jp-unmute {
+	background: url("../img/jplayer-black-and-yellow.png") -10px -98px no-repeat;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	display: none;
+}
+a.jp-unmute:hover {
+	background: url("../img/jplayer-black-and-yellow.png") -43px -98px no-repeat;
+}
+div.jp-jplayer {
+	width: 0px;
+	height: 0px;
+}
+div.jp-jplayer {
+	background-color: #000000;
+}
